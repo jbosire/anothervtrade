@@ -10,12 +10,12 @@ const IS_TESTING = process.env.NODE_ENV === "test";
 function getDatabaseUri() {
 
   const dbUser = process.env.DATABASE_USER || "postgres";
-  const dbPass = encodeURI("Keringet.10")
+  const dbPass = encodeURI("Vassartrade")
   // process.env.DATABASE_PASS
   //   ? encodeURI(process.env.DATABASE_PASS)
   //   : "postgres";
   
-  const dbHost = process.env.DATABASE_HOST || "localhost";
+  const dbHost = process.env.DATABASE_HOST || "vtrade.c2xl9oebzkr7.us-east-1.rds.amazonaws.com";
   const dbPort = process.env.DATABASE_PORT || 5432;
   const dbProdName = process.env.DATABASE_NAME || "vtrade";
   const dbTestName = process.env.DATABASE_TEST_NAME || "vtrade";
