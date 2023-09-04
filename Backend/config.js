@@ -14,6 +14,7 @@ function getDatabaseUri() {
   // process.env.DATABASE_PASS
   //   ? encodeURI(process.env.DATABASE_PASS)
   //   : "postgres";
+  
   const dbHost = process.env.DATABASE_HOST || "localhost";
   const dbPort = process.env.DATABASE_PORT || 5432;
   const dbProdName = process.env.DATABASE_NAME || "vtrade";
